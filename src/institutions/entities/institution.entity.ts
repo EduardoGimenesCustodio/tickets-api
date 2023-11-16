@@ -1,6 +1,6 @@
 import { EventEntity } from 'src/events/entities/event.entity';
 
-export class Institution {
+export class InstitutionEntity {
   id: number;
   name: string;
   email: string;
