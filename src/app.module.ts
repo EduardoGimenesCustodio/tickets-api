@@ -2,6 +2,10 @@ import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import configuration from './config/configuration';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { UsersModule } from './users/users.module';
+import { TicketsModule } from './tickets/tickets.module';
+import { InstitutionsModule } from './institutions/institutions.module';
+import { EventsModule } from './events/events.module';
 
 @Module({
   imports: [
@@ -23,6 +27,10 @@ import { TypeOrmModule } from '@nestjs/typeorm';
         autoLoadEntities: true,
       }),
     }),
+    UsersModule,
+    TicketsModule,
+    InstitutionsModule,
+    EventsModule,
   ],
 })
 export class AppModule {
