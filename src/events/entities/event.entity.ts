@@ -4,7 +4,7 @@ export class EventEntity {
   id: number;
   name: string;
   description: string;
-  data: Date;
+  date: Date;
   tickets_available: number;
   institution_id: number;
   tickets?: TicketEntity[];
