@@ -9,12 +9,6 @@ export class InstitutionModel {
   @Column()
   name: string;
 
-  @Column()
-  email: string;
-
-  @Column()
-  password: string;
-
   @OneToMany(() => EventModel, (event) => event.institution)
   events?: EventModel[];
 }
